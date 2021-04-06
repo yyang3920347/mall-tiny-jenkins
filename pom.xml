@@ -98,7 +98,7 @@
                 </executions>
                 <configuration>
                     <imageName>mall-tiny/${project.artifactId}:${project.version}</imageName>
-                    <dockerHost>http://172.17.0.1:2375</dockerHost>
+                    <dockerHost>http://172.16.100.111:2375</dockerHost>
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java", "-jar","/${project.build.finalName}.jar"]
                     </entryPoint>
