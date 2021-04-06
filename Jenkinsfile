@@ -3,7 +3,7 @@ pipeline {
   // 设置全局变量
   environment {
     // jar 文件的stash名称,maven编译好的jar包需要转移到jdk容器中
-    STASH_JAR = "mall-tiny-jenkins-1.0-SNAPSHOT"
+    STASH_JAR = "mall-tiny-jenkins-1.0-SNAPSHOT.jar"
     // 宿主机maven的.m2目录,会将宿主机的maven库挂载到maven容器中,不需要下载过多的jar包
     MAVEN_M2_PATH = "/mydata/apache-maven-3.6.3/repository"
     // jar镜像名称,定义jar文件名 ->
